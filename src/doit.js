@@ -21,7 +21,13 @@ raDeg *= 15.; // convert hours to degrees
 // Parse Declination
 var breakDec = dec.innerHTML.replace(/\s/g, '&nbsp;').split('&nbsp;');
 
-var d = parseFloat(breakDec[0].split('<sup>')[0]),
+var decSign = 1.;
+var dstr = breakDec[0].split('<sup>')[0];
+if (dstr.indexOf('−') == 0) {
+    decSign = -1.;
+    dstr = dstr.replace('−','');
+}
+var d = parseFloat(dstr),
     m = parseFloat(breakDec[1].split('<sup>')[0]),
     s = parseFloat(breakDec[2].split('<sup>')[0]);
 
@@ -35,4 +41,4 @@ if (!isNaN(s)) {
 }
 
 $(ra).html(raDeg.toFixed(8));
-$(dec).html(decDeg.toFixed(8));
+$(dec).html(decSign * decDeg.toFixed(8));

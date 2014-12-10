@@ -1,7 +1,7 @@
 UNCLOCKIFY
 ==========
 
-Astronomical coordinates on Wikipedia are formatted as sexagesimal numbers in, for Right ascension, time units (hours, minutes, and seconds). Activating this extension finds and replaces the coordinates with coordinates in decimal degrees.
+[Astronomical coordinates on Wikipedia](https://en.wikipedia.org/wiki/Andromeda_Galaxy) are formatted as sexagesimal numbers in, for Right ascension, time units (hours, minutes, and seconds). Activating this extension finds and replaces the coordinates with coordinates in decimal degrees.
 
 Installation
 ============

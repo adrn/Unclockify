@@ -3,7 +3,6 @@ chrome.browserAction.onClicked.addListener(function (tab) { //Fired when User Cl
         chrome.tabs.executeScript(tab.id, {
             "file": "doit.js"
         }, function () { // Execute your code
-            console.log("Script Executed .. "); // Notification on Completion
         });
     });
 });

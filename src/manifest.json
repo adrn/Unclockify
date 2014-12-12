@@ -11,5 +11,10 @@
     "scripts": ["jquery-2.1.1.min.js", "background.js"],
     "matches": [ "http://*/*", "https://*/*"]
   },
-  "permissions": ["https://*.wikipedia.org/*"] // all your URL are belong to here
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*/",
+    "https://*/"
+  ]
 }
